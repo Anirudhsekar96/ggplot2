@@ -179,3 +179,52 @@ scale_x_sqrt <- function(...) {
 scale_y_sqrt <- function(...) {
   scale_y_continuous(..., trans = sqrt_trans())
 }
+#' @rdname scale_continuous
+#' @export
+scale_x_thousands <- function(...) {
+  
+  scale_x_continuous(..., trans = thousands_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_y_thousands <- function(...) {
+  
+  scale_y_continuous(..., trans = thousands_trans())
+}
+
+#' @rdname scale_continuous
+#' @export
+scale_x_millions <- function(...) {
+  
+  scale_x_continuous(..., trans = millions_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_y_millions <- function(...) {
+  
+  scale_y_continuous(..., trans = millions_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_x_billions <- function(...) {
+  
+  scale_x_continuous(..., trans = billions_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_y_billions <- function(...) {
+  
+  scale_y_continuous(..., trans = billions_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_x_trillions <- function(...) {
+  
+  scale_x_continuous(..., trans = trillions_trans())
+}
+#' @rdname scale_continuous
+#' @export
+scale_y_trillions <- function(...) {
+  
+  scale_y_continuous(..., trans = trillions_trans())
+}
